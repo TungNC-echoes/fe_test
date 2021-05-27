@@ -1,33 +1,18 @@
 <template>
   <div>
-    <div class="header">
-      <div class="header-content">
-        <div class="left-header">
-          <div class="logo"><img src="@/assets/images/logo.svg"></div>
-          <div class="united"><img src="@/assets/images/united.svg"></div>
-        </div>
-        <div class="right-header">
-          <div class="logout">
-            <img src="@/assets/images/logout.svg">
-            <span>Log Out</span>
-          </div>
-          <div class="united">
-            <img src="@/assets/images/earth.svg">
-            <span>Eng</span>
-          </div>
-          <div class="help">
-            <img src="@/assets/images/help.svg">
-          </div>
-        </div>
-      </div>
-    </div>
-    <el-main>{{$t('success') }}</el-main>
+    <Header/>
+    <MainContent/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+  import Header from "./Header";
+  import MainContent from "./MainContent";
+  import Footer from "./Footer";
   export default {
     name: 'AppMain',
+    components: { Header, MainContent, Footer },
     data() {
       return {}
     }

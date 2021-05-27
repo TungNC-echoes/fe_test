@@ -1,43 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
   margin: 0;
+  color: #ffffff;
 }
 #app {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Montserrat, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
-  color: #4f4f4f;
   font-size: 14px;
   background-color: #f5f7fa;
 }
 .white {
   color: #ffffff;
 }
-.header {
-  height: 55px;
-  background: #111052;
-  border-radius: 8px 8px 0 0;
-}
-
-.header-content {
+.display-flex {
   display: flex;
 }
-
-.header-content .logo {
-  padding: 10px 25px;
-}
-.left-header {
-  display: flex;
-  float: left;
-}
-.right-header {
-  display: flex;
-  float: right;
-}
-.header-content .logo {
-  padding: 10px 25px;
-}
-
-.header-content .united {
-  padding: 22px 0 16.5px 0;
+.el-row {
+  width: 100%;
 }
